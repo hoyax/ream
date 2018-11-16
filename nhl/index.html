@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>NHL Streams - Streams Rip</title>
+  <meta name="description" content="Free Online service to Download YouTube videos at one click! The best YouTube Downloader supporting fast and easy vimeo, Facebook and Dailymotion video Download and much more!">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="../assets/css/material-dashboard.css" rel="stylesheet" />
+</head>
+
+<body class="dark-edition" style="text-align: center;">
+  <div class="wrapper ">
+    <div class="main-panel">
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-7 col-lg-12" style="margin: 0 auto;">
+		<nav class="card footer">
+			<div class="container-fluid">
+			  <nav class="float-center">
+			 <ul>
+				<li><a href="https://streams.rip">Streams rip</a></li>
+				<li><a href="https://streams.rip/">NFL</a></li>
+				<li><a href="https://streams.rip/nba">NBA</a></li>
+			        <li><a href="https://streams.rip/mlb">MLB</a></li>
+				<li><a href="http://streams.rip/nhl">NHL</a></li>
+				    <li>
+					    <button id="dx" type="button" class="bttn-material-flat bttn-xs bttn-warning bttn-no-outline" data-toggle="modal" data-target="#exampleModal">Select Date</button>
+				    </li>
+			    </ul>
+			  </nav>
+			</div>
+		</nav>
+		    <div class="fancy-box-wrapper animated fadeInUp">
+			    <div id="games" class="box-wrapper animated fadeInUp">
+				    <div class="lds-facebook" id="loader"><div></div><div></div><div></div></div>
+			    </div>
+		    </div>
+		<footer class="card footer">
+			<div class="container-fluid">
+			  <nav class="float-center">
+			    <ul>
+			      <li>
+				<a href="https://streams.rip">
+				  Streamsrip
+				</a>
+			      </li>
+			      <li>
+				<a href="https://streams.rip/">
+				  About Us
+				</a>
+			      </li>
+			      <li>
+				<a href="https://streams.rip/">
+				  TOS
+				</a>
+			      </li>
+			    </ul>
+			  </nav>
+			</div>
+	      </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<style>.dark-edition .form-control, .is-focused .dark-edition .form-control {background-image: linear-gradient(to top, #429eb2 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);}.card .card-body {padding: 1rem;}.btn {width: 32%;margin: 0.125rem;padding: 0.5rem;font-size: small;font-weight: 600;}button#oki,input#yt {margin: 15px;}input#yt {text-align: center;}.card-img-top{border-radius: 6px;}.card-header {padding: 0;}.main-panel {width: calc(100%);}.main-panel>.content {margin-top: 0;padding: 0;}nav.card.footer {margin-top: 10px;}footer.card.footer {margin-bottom: 10px;}h4.titl {padding-top: 1.5rem;}.dark-edition .btn.btn-info {color: black;}
+#dli{color: #fff;}
+.spinr{
+    -webkit-animation-name: spin;
+    -webkit-animation-duration: 4000ms;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: spin;
+    -moz-animation-duration: 4000ms;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -ms-animation-name: spin;
+    -ms-animation-duration: 4000ms;
+    -ms-animation-iteration-count: infinite;
+    -ms-animation-timing-function: linear; 
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;}
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+span.btn.btn-info {
+    width: 100%;
+}
+	
+.ui-datepicker {width: 100%;}
+.ui-datepicker-title {
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    overflow: hidden;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #31404b;
+    line-height: 1.2em;
+    margin: -10px -10px 10px -10px;
+    padding-left: 14px;
+    padding-right: 14px;
+    vertical-align: middle;
+}
+th.ui-datepicker-week-end {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: #31404b;
+    text-align: center;
+    padding: 10px;
+}
+a.ui-state-default.ui-state-highlight.ui-state-active {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(241, 172, 59);
+    border-radius: 50%;
+    text-align: center;
+    line-height: 25px;
+    color: #000;
+    margin: 0 -4px;
+}
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+    border: 0px salmon solid;
+    text-align: center;
+    background: transparent;
+}
+.modal-content {
+    background: transparent;
+}
+.dark-edition .ui-widget-content {
+    background: #010713;
+}
+.dark-edition .ui-datepicker-inline.ui-datepicker.ui-widget.ui-widget-content.ui-helper-clearfix.ui-corner-all {
+    border: 1px solid #333131;
+}
+.modal-body {
+    padding: 0rem;
+}
+.ui-datepicker .ui-datepicker-header {
+    padding: 0;
+}
+.ui-widget-header {
+	background-color: rgb(241, 172, 59);
+	border: 0px red solid;
+}
+	.ui-datepicker .ui-datepicker-title {
+    margin: 0;
+    line-height: 1em;
+    text-align: center;
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+    background: rgb(241, 172, 59);
+}
+</style>
+  <script src="../assets/js/core/jquery.min.js"></script>
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+  <script src="../assets/js/core/main.js"></script><script>$(document).ready(function(){nhl();});</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125822077-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-125822077-1');
+</script>
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-body">	     
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script>
+	$(function() {
+		if(getx('date')){
+		$( "#datepicker" ).datepicker({defaultDate: getx('date'),dateFormat: "yy-mm-dd",onSelect: function () {
+                        window.location.href = 'https://streams.rip/nhl?date=' + $(this).val();
+                    }});
+		}
+		else{
+		$( "#datepicker" ).datepicker({dateFormat: "yy-mm-dd",onSelect: function () {
+                        window.location.href = 'https://streams.rip/nhl?date=' + $(this).val();
+                    }});
+		}
+	});
+		
+	</script>
+	<div id="datepicker"></div>	      
+      </div>
+  </div>
+</div>
+</div>
+</body>
+
+</html>

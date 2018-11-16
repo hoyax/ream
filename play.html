@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="../assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Player - StreamsRip</title>
+  <meta name="description" content="Watch your favorite sports on StreamsRip. Works on all your devices, anywhere, anytime. No ads, no setup, no blackouts.">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link href="./assets/css/material-dashboard.css" rel="stylesheet" />
+	<!--<script src="./assets/js/rmp-shaka.min.js"></script>-->
+	<link rel="stylesheet" href="//releases.flowplayer.org/7.0.4/skin/skin.css">
+	<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="//releases.flowplayer.org/7.0.4/flowplayer.min.js"></script>
+	<script src="//releases.flowplayer.org/hlsjs/flowplayer.hlsjs.min.js"></script>	
+	<script src="https://releases.flowplayer.org/dashjs/flowplayer.dashjs.min.js"></script></head>
+	<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+<body class="dark-edition" style="text-align: center;">
+  <div class="wrapper ">
+    <div class="main-panel">
+      <div class="content">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xl-7 col-lg-12" style="margin: 0 auto;">
+            <nav class="card footer">
+              <div class="container-fluid">
+		     <nav class="float-center">
+			<ul>
+			  <li><a href="https://streams.rip">Streams rip</a></li>
+			  <li><a href="https://streams.rip/">NFL</a></li>
+			  <li><a href="https://streams.rip/nba">NBA</a></li>
+			  <li><a href="https://streams.rip/mlb">MLB</a></li>
+			  <li><a href="http://streams.rip/nhl">NHL</a></li>
+			  <li><label class="form-check form-check-inline" onchange="theme()" id="theme">Dark Mode<input class="form-check-input" type="checkbox" id="inlineCheckbox" checked=""><span class="form-check-sign"><span class="check"></span></span></label></li>
+			  <!--<li><a href="https://twitter.com/streamsrip?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @streamsrip</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></li>--> 
+			</ul>
+                
+		      </nav>
+              </div>
+            </nav>
+		    
+		    <div class="card" id="gmTitle">
+		    </div>
+		    <div id="headx">
+		    </div>
+		    <div class="card" style="background-color: transparent;box-shadow: none;">
+			    <div class="lds-facebook" id="loader"><div></div><div></div><div></div></div>
+			    <div class="row">
+				    <div class="col-xl col-lg-12" style="">
+					    <div id="rmpPlayer" class="flowplayer fp-edgy"></div>
+				    </div>
+				    <div class="col-xl-4 col-lg-12" id="chatbox">
+				    </div>
+			    </div>
+		    </div>
+		    <footer class="card footer">
+		      <div class="container-fluid">
+			<nav class="float-center">
+			  <ul>
+			    <li>
+				<a href="https://streams.rip">
+				  Streamsrip
+				</a>
+			    </li>
+			    <li>
+				<a href="https://streams.rip/">
+				  About Us
+				</a>
+			    </li>
+			    <li>
+				<a href="https://streams.rip/">
+				  TOS
+				</a>
+			    </li>
+			  </ul>
+			</nav>
+		      </div>
+                </footer>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+<style>
+#cdn,#feed,#chat {margin: 0.32rem 0.96rem;}h2 {color : #f4af3e}
+	.form-check .form-check-sign {
+    vertical-align: middle;
+    position: relative;
+    top: 2px;
+    float: left;
+    padding-right: 0px;
+    display: inline-block;
+    padding-left: 8px;
+}.form-check {margin-bottom: 0;}
+#rmpPlayer {border-radius: 6px;}.lds-facebook {margin: 0 auto;}#tEa3-dimensions {width: 100%;height: 480px;}.dark-edition .form-control, .is-focused .dark-edition .form-control {background-image: linear-gradient(to top, #429eb2 2px, rgba(156, 39, 176, 0) 2px), linear-gradient(to top, rgba(180, 180, 180, 0.1) 1px, rgba(180, 180, 180, 0) 1px);}.card .card-body {padding: 1rem;}.btn {width: 32%;margin: 0.125rem;padding: 0.5rem;font-size: small;font-weight: 600;}button#oki,input#yt {margin: 15px;}input#yt {text-align: center;}.card-img-top{border-radius: 6px;}.card-header {padding: 0;}.main-panel {width: calc(100%);}.main-panel>.content {margin-top: 0;padding: 0;}nav.card.footer {margin-top: 10px;}footer.card.footer {margin-bottom: 10px;}h4.titl {padding-top: 1.5rem;}.dark-edition .btn.btn-info {color: black;}#dli{color: #fff;}
+</style>
+ <script src="./assets/js/core/popper.min.js"></script>
+  <script src="./assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="./assets/js/plugins/perfect-scrollbar.jquery.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone.min.js"></script>
+  <script src="https://momentjs.com/downloads/moment-timezone-with-data.min.js"></script>
+  <script src="./assets/js/core/main.js"></script><script>game();</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125822077-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-125822077-1');
+</script>
+<script type='text/javascript' src='//hiug862dj0.com/27/1e/60/271e6098e6e9b3696e4b2793fe1bd54d.js'></script>
+	<!-- PopAds.net Popunder Code for streams.rip | 2018-10-28,2930702,0,0 -->
+<script type="text/javascript" data-cfasync="false">
+/*<![CDATA[/* */
+/* Privet darkv. Each domain is 2h fox dead */
+ (function(){ var b=window;b["\x5fp\u006fp"]=[["\x73\x69te\x49\x64",2930702],["\x6din\x42\x69d",0],["p\x6f\u0070u\u006e\u0064\u0065\u0072\x73\x50\u0065rI\x50",0],["\u0064\u0065\x6ca\x79\u0042\x65\x74\x77\u0065\u0065\x6e",0],["\u0064\x65fau\u006ct",false],["\u0064e\x66\x61\u0075l\x74\u0050\u0065\x72\x44\x61\x79",0],["\x74opmos\x74\u004caye\x72",!0]];var g=["\x2f\x2f\x63\x31\u002e\x70\x6f\u0070\u0061ds\x2en\x65t\u002fp\u006fp\u002e\u006a\x73","\x2f\u002fc\x32\x2e\u0070\x6f\x70\x61d\x73.\x6eet\x2fp\u006f\u0070.j\u0073","\x2f\x2f\x77w\x77.n\u0074\x67\u0071\u0063\u006efer\u0068\x2e\u0063o\x6d\u002f\u0076\u002e\u006a\u0073","\u002f\u002f\x77\u0077w\u002e\u0062\u0078vy\u0064x\u006a\x71kl\u0071\x2ec\u006fm/\u0068c\x2e\x6a\u0073",""],c=0,x,m=function(){if(""==g[c])return;x=b["\x64\u006f\x63\x75\u006d\u0065\x6et"]["\u0063re\u0061\x74eEl\x65m\x65n\x74"]("\u0073c\x72\x69\x70t");x["t\x79\u0070\x65"]="\u0074\u0065\u0078\x74/\u006a\x61va\u0073\u0063r\x69\x70\u0074";x["as\x79n\u0063"]=!0;var i=b["doc\u0075\u006d\u0065\u006e\x74"]["\x67et\x45\u006c\u0065\x6d\u0065\x6e\x74\x73\x42\x79T\u0061\u0067\x4e\x61\x6d\x65"]("s\x63\x72\x69\u0070t")[0];x["s\u0072\u0063"]=g[c];if(c<2){x["\u0063\u0072\u006f\x73\x73\x4f\x72\x69\x67\x69n"]="\u0061non\u0079m\x6f\u0075\u0073";};x["\x6f\u006e\u0065\x72\u0072\u006f\x72"]=function(){c++;m()};i["\u0070\x61r\u0065nt\u004eo\u0064\x65"]["\x69\x6e\u0073\u0065\x72t\x42\x65f\u006f\u0072\u0065"](x,i)};m()})();
+/*]]>/* */
+</script>
+
+	</body>
+</html>
